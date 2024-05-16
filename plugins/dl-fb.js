@@ -30,7 +30,4 @@ handler.help = ['facebook <url>']
 handler.tags = ['downloader']
 handler.command = /^((facebook|fb)(downloder|dl)?)$/i
 
-handler.register = true
-handler.limit = 8;
-
 export default handler
