@@ -3,7 +3,7 @@ import fs from 'fs';
 const handler = async (m, {conn, usedPrefix}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
-    const picture = './media/menus/Menu2.mp4';
+    const picture = './media/menus/Menu4.jpg';
     const img = fs.readFileSync(picture);
     
     const taguser = '@' + m.sender.split('@')[0];
