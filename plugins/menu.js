@@ -84,7 +84,7 @@ export default handler;
 async function genProfile() {
     try {
         // Generate an image using JIMP
-        const image = await jimp.read('https://telegra.ph/file/360b6eedd3264dad73530.jpg'); // Use your image URL
+        const image = await jimp.read('https://telegra.ph/file/25138d52d9359a658c727.jpg'); // Use your image URL
         image.resize(256, 256); // Resize the image if necessary
         return await image.getBufferAsync(jimp.MIME_JPEG); // Return the image buffer
     } catch (e) {
