@@ -28,8 +28,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
                 {
                     title: "JEEN Ai ", highlight_label: "Popular",
                     rows: [
-                        { header: "Ai Commands", title: "", description: "all ai commands", id: usedPrefix + "aimenu" },
-                        { header: "Islam Commands", title: "", description: "all islamic commands", id: usedPrefix + "islammenu" }
+                        { header: "Ai Commands", title: "", description: "all ai commands", id: usedPrefix + "aimenu" }                        
                     ]
                 },
                 {
