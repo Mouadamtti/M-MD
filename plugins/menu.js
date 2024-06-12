@@ -16,7 +16,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
                 {
                     title: "Zall more ", highlight_label: "Popular",
                     rows: [
-                        { header: "Account Commands", title: "", description: "all account commands", id: usedPrefix + "accountmenu" }
+                        { header: "Account Commands", title: "", description: "all account commands", id: usedPrefix + "accmenu" }
                     ]
                 },
                 {
