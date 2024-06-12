@@ -14,25 +14,25 @@ let handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
             description: "Get information through official means about zall",
             sections: [
                 {
-                    title: "JEEN more ", highlight_label: "Popular",
+                    title: "Zall more ", highlight_label: "Popular",
                     rows: [
                         { header: "Account Commands", title: "", description: "all account commands", id: usedPrefix + "accmenu" }
                     ]
                 },
                 {
-                    title: "JEEN downloads", highlight_label: "Popular",
+                    title: "Zall downloads", highlight_label: "Popular",
                     rows: [
                         { header: "Download Commands", title: "", description: "All download commands", id: usedPrefix + "downmenu" }
                     ]
                 },
                 {
-                    title: "JEEN Ai ", highlight_label: "Popular",
+                    title: "Zall Ai ", highlight_label: "Popular",
                     rows: [
                         { header: "Ai Commands", title: "", description: "all ai commands", id: usedPrefix + "aimenu" }                        
                     ]
                 },
                 {
-                    title: "JEEN Other ", highlight_label: "Popular",
+                    title: "Zall Other ", highlight_label: "Popular",
                     rows: [
                         { header: "Other Commands", title: "", description: "all Other commands", id: usedPrefix + "menuother" },
                         { header: "info", title: "", description: "Info user", id: usedPrefix + "info" }
