@@ -1,20 +1,20 @@
 const freeXP = 500;
-const premXP = 20000;
+const premXP = 2000;
 const freelimit = 100; // عدد الجواهر التي سيحصل عليها المستخدم في المكافأة اليومية
-const premlimit = 2000; // عدد الجواهر التي سيحصل عليها المستخدم المميز في المكافأة اليومية
+const premlimit = 100; // عدد الجواهر التي سيحصل عليها المستخدم المميز في المكافأة اليومية
 
 let handler = async (m, { isPrems }) => {
   let time = global.db.data.users[m.sender].lastclaim + 86400000;
 
   if (new Date() - global.db.data.users[m.sender].lastclaim < 86400000)
-    throw `🎁 *You have already claimed your daily reward*\n\n🕚 Come back in *${msToTime(
+    throw ` *Wait for the next day together the same time to get the gift*\n\n⏰ in time *${msToTime(
       time - new Date()
     )}*`;
 
   global.db.data.users[m.sender].exp += isPrems ? premXP : freeXP;
   global.db.data.users[m.sender].limit += isPrems ? premlimit : freelimit;
 
-  m.reply(`🎁 *DAILY REWARD*
+  m.reply(`💮 *DAILY REWARD*
 ▢ *You have received:*
 🆙 *XP*: +${isPrems ? premXP : freeXP}
 💲 *Gold*: +${isPrems ? premlimit : freelimit}`);
@@ -23,7 +23,7 @@ let handler = async (m, { isPrems }) => {
 };
 handler.help = ['daily'];
 handler.tags = ['xp'];
-handler.command = ['daily', 'gift'];
+handler.command = ['daily', 'coldgift'];
 handler.register = false;
 export default handler;
 
